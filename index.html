@@ -23,17 +23,16 @@
         </a-entity>
 
         <!-- environment link (comment out when unwanted) -->
-        <a-entity 
+        <!-- <a-entity 
             environment="preset: dream; 
             groundColor: #445; 
             grid: cross;">
-        </a-entity>
+        </a-entity> -->
 
         <!-- Asset Mannegment System -->
         <a-assets>
             <img id="Brick" src="assets/BrickTexture.jpeg">
-            <img id="Sky" src="assets/SkyTexture.jpeg">
-            <img id="SkyBox" src="assets/SkyBoxTexture.jpeg">
+            <img id="SkyBox" src="assets/SkyBoxCircle.jpeg">
             <img id="StrawWall" src="assets/StrawWallTexture.jpeg">
             <img id="StrawRoof" src="assets/StrawRoofTexture.jpeg">
             <img id="StickWall" src="assets/StickWall.jpeg">
@@ -85,14 +84,13 @@
         </a-entity>
         
         <!-- Ground (comment out when using an environment)-->
-            <!-- <a-plane 
-                position="0 0 -4" 
+            <a-plane 
                 rotation="-90 0 0" 
-                width="20" 
-                height="20"
-                color="#7BC8A4" 
+                width="100" 
+                height="100"
+                color="#145c2e" 
                 shadow>
-            </a-plane> -->
+            </a-plane>
 
         <!-- Begining of brick house -->
         <a-entity>
@@ -663,10 +661,11 @@
     <!-- End of Stick house entity -->
 
     <!-- Sky (For the sky I used a texture) comment out when using an environment-->
-     <!-- <a-sky
+     <a-sky
         src="#SkyBox"
-        >
-     </a-sky> -->
+        repeat="1 1"
+        rotation="0 0 -90">
+     </a-sky>
 
     </a-scene>
     
